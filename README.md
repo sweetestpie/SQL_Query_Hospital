@@ -2,35 +2,35 @@
 ### mini project เกี่ยวกับ SQL โดยที่ได้มีการนำเอาข้อมูลของโรงพยาบาลแห่งหนึ่ง มาสรุปผล และวิเคราะห์ข้อมูล โดยมีการสรุปผลและวิเคราะห์ข้อมูล ดังนี้
 
 # > Preview Data
-#### 
+#### แสดงรายการทั้งหมดของตาราง Patient
 <img width="857" height="395" alt="image" src="https://github.com/user-attachments/assets/c61024fb-3c12-456c-9d58-2644ed8ddd9d" />
 
 # > show doctor who have exp more than 5 years
-###
+### แสดงรายชื่อแพทย์ที่มีประสบการณ์มากกว่า 5 ปีขึ้นไป
 <img width="644" height="421" alt="image" src="https://github.com/user-attachments/assets/04281664-c827-4acf-a77a-b1f2137fe456" />
 
 # > join table show patient name and doctor name appointment
-###
+### แสดงรายการ การนัดหมาย ชื่อผู้ป่วย ชื่อแพทย์ และวันที่นัดหมาย
 <img width="675" height="625" alt="image" src="https://github.com/user-attachments/assets/b7568136-ab43-499c-8d02-46177ffc0215" />
 
 # > sum how many time, each of appointment in each type
-###
+### สรุปผล จำนวนครั้งการรักษา โดยแยกตาม treatment type
 <img width="723" height="344" alt="image" src="https://github.com/user-attachments/assets/ee11d2fd-7715-472a-8a18-c892a3a5d93e" />
 
 # > revenue for the month (included treatment from billing)
-###
+### สรุปรายได้ของแต่ละเดือน
 <img width="575" height="549" alt="image" src="https://github.com/user-attachments/assets/53d566b0-5f4a-4b59-8b0f-3a92f6878595" />
 
 # > total revenue from each doctor
-###
+### สรุปรายได้ของแพทย์แต่ละคน
 <img width="695" height="530" alt="image" src="https://github.com/user-attachments/assets/ce111455-7161-46aa-ac3f-d2e7fff5eede" />
 
 # > patient who have most appointment
-###
+### ผู้ป่วยที่มีการนัดหมายเยอะที่สุด เรียงจากมากไปน้อย
 <img width="685" height="512" alt="image" src="https://github.com/user-attachments/assets/4bc00e1e-c585-408c-9c81-96592902a56b" />
 
 # > for patient who did appointment but not showing up (show name)
-####
+#### แสดงรายชื่อ ผู้ป่วยที่ ไม่มาตามนัดหมาย
 <img width="685" height="389" alt="image" src="https://github.com/user-attachments/assets/602544c0-f0f4-4249-aeb4-b6eee019df35" />
 
 # > for patient who did appointment but cancel and showing up
