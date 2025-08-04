@@ -15,7 +15,7 @@
 
 # > sum how many time, each of appointment in each type
 ###
-<img width="684" height="584" alt="image" src="https://github.com/user-attachments/assets/f4752894-4ea4-432c-8268-e18ad9f9d9a4" />
+<img width="723" height="344" alt="image" src="https://github.com/user-attachments/assets/ee11d2fd-7715-472a-8a18-c892a3a5d93e" />
 
 # > revenue for the month (included treatment from billing)
 ###
