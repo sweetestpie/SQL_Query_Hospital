@@ -9,7 +9,7 @@ FROM doctors
 WHERE years_experience > 5
 ORDER BY years_experience DESC;
 
--- joint table show patient name and doctor name appointment
+-- join table show patient name and doctor name appointment
 SELECT 	patients.first_name AS patientsName,
 		doctors.first_name AS doctorName,
 		appointments.appointment_date
@@ -87,7 +87,8 @@ ORDER BY Cost_per DESC;
 --KPI income per doctor and time of appointments
 SELECT doctors.first_name||' '||doctors.last_name AS DoctorName,
 		count(distinct appointments.appointment_id) AS num_appointment,
-		sum(billing.amount) AS total_revenue
+		sum(billing.amount) AS total_revenue,
+		sum(billing.amount) /count(distinct appointments.appointment_id) AS Total_per_doctor
 FROM billing
 JOIN treatments ON billing.treatment_id = treatments.treatment_id
 JOIN appointments ON treatments.appointment_id = appointments.appointment_id
@@ -104,13 +105,18 @@ FROM billing
 GROUP BY month;
 
 --view for doctor_kpi
+DROP VIEW IF EXISTS doctor_kpis;
+
 CREATE VIEW doctor_kpis AS
 SELECT doctors.first_name||' '||doctors.last_name AS DoctorName,
 		count(distinct appointments.appointment_id) AS num_appointment,
-		sum(billing.amount) AS total_revenue
+		sum(billing.amount) AS total_revenue,
+		sum(billing.amount) / count(distinct appointments.appointment_id)  AS Total_per
+
 FROM billing
 JOIN treatments ON billing.treatment_id = treatments.treatment_id
 JOIN appointments ON treatments.appointment_id = appointments.appointment_id
 JOIN doctors ON doctors.doctor_id = appointments.doctor_id
-GROUP BY DoctorName
-ORDER BY total_revenue;
+GROUP BY DoctorName;
+
+
